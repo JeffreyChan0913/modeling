@@ -39,6 +39,7 @@ int main(int argc, char *argv[]){
     vector<thread> threads;
     vector<future<long double>> futures;
     const uint32_t numberOfThreads = atoi(argv[1]);
+
     for(uint32_t thread = 1; thread <= numberOfThreads; ++thread){
         promise<long double> prom;
         futures.push_back(prom.get_future());
