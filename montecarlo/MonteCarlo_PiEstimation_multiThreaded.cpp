@@ -17,7 +17,7 @@ uint32_t calculation(const Point &p){
 }
 
 long double MonteCarlo(const uint32_t & thread_number, promise<long double> &&prom){
-    const uint64_t numberOfIterations = 8e10;
+    const uint64_t numberOfIterations = 1e10;
     const long double lower_bound = 0.0;
     const long double upper_bound = 1.0;
 
